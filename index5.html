@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Video Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. HEADER -->
+    <header class="header">
+        <div class="logo">
+            <a href="#">🎬 MyVideo</a>
+        </div>
+        <nav class="head-link">
+            <ul>
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">Phim lẻ</a></li>
+                <li><a href="#">Phim bộ</a></li>
+                <li><a href="#">Hoạt hình</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 2. CONTAINER (Chứa nội dung chính) -->
+    <div class="container">
+        
+        <!-- LEFT CONTENT: Danh sách video -->
+        <aside class="left-content">
+            <h3>Danh sách Video</h3>
+            <ul class="video-list">
+                <li><a href="#">1. Hướng dẫn học HTML CSS cơ bản</a></li>
+                <li><a href="#">2. Tạo hiệu ứng Sticky Header</a></li>
+                <li><a href="#">3. Thiết kế Responsive với Media Queries</a></li>
+                <li><a href="#">4. Tìm hiểu về thẻ iframe và video</a></li>
+            </ul>
+        </aside>
+
+        <!-- RIGHT CONTENT: Khu vực phát video -->
+        <main class="right-content">
+            <!-- Sử dụng thẻ iframe để nhúng video YouTube -->
+            <div class="video-player">
+                <iframe 
+                    src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            
+            <div class="video-info">
+                <h2>Hướng dẫn học HTML CSS cơ bản</h2>
+                <p class="meta">Lượt xem: 1.000.000 | Cập nhật: 20/10/2023</p>
+                <p class="description">Đây là khu vực mô tả chi tiết về video. Nội dung được hiển thị mặc định của video đầu tiên trong danh sách.</p>
+            </div>
+        </main>
+
+    </div>
+
+    <!-- 3. FOOTER -->
+    <footer class="footer">
+        <p>&copy; 2023 Bản quyền thuộc về MyVideo. Thiết kế bởi Sinh Viên IT.</p>
+    </footer>
+
+</body>
+</html>
